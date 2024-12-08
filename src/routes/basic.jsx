@@ -6,12 +6,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { Button,Box, Typography, Container } from '@mui/material';
 
-const links = ["Home", "News", "FAQs", "About Us"];
+const links = [{path:"",name:"Home"},{path: "News",name:"News"},{path: "FAQs",name:"FAQs"},{path: "About Us",name:"About Us"}];
 
 function NavBar () {
     const navigate = useNavigate();
     const [menu, setMenu] = useState(false);
-    const drop = links.map(link =><NavLink to={link} className={({isActive})=>{isActive ? "underline decoration-gray-100 font-semibold" : "font-light"}}><p className="font-poppins px-1 py-1 text-sm font-light">{link}</p></NavLink>);
+    const drop = links.map(link =><NavLink to={link.path} className={({isActive})=>{isActive ? "underline decoration-gray-100 font-semibold" : "font-light"}}><p className="font-poppins px-1 py-1 text-sm font-light">{link.name}</p></NavLink>);
     return(
         <div className="flex w-full bg-slate-900 text-gray-100 py-2 px-4">
         <div className="sm:hidden" onClick={()=>setMenu(!menu)}>{menu ? <MdClose/> : <GiHamburgerMenu/> }</div>
