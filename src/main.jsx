@@ -20,6 +20,9 @@ import Forums from './routes/Forums.jsx';
 import Faqs from './routes/faqs.jsx';
 import About from './routes/about.jsx';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+import AuthLayout from './routes/AuthLayout.jsx';
+import AuthHome from './routes/AuthHome.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -48,6 +51,16 @@ const router = createBrowserRouter([
       Component: About
       },
     ],
+  },
+  {
+     path: "/auth",
+     Component: AuthLayout,
+     children: [
+      {
+      index: true,
+      Component: AuthHome
+      },
+     ],
   },
   {
     path: "login",

@@ -28,13 +28,12 @@ const Register = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add validation and submission logic here
     console.log("Form Submitted", formData);
   };
   return (
     <div className="flex w-full bg-slate-100">
-      <div className='sm:w-2/3 w-full flex h-auto mx-8 justify-center  bg-blue-50'>
-        <div className="w-full sm:w-2/3 my-4 px-6 py-10 space-y-8 bg-white rounded-xl font-poppins shadow-xl">
+      <div className='sm:w-2/3 w-full flex h-auto mx-6 justify-center  bg-blue-50'>
+        <div className="w-full sm:w-2/3 my-4 px-4 py-10 space-y-8 bg-white rounded-xl font-poppins shadow-xl">
           <h2 className="text-xl font-poppins text-center text-slate-800">
             Please Register
           </h2>
@@ -42,7 +41,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="fullName"
-                className="block   sm:text-xs font-medium text-gray-700"
+                className="block text-sm  sm:text-xs font-medium text-gray-700"
               >
                 Full Name
               </label>
@@ -53,14 +52,14 @@ const Register = () => {
                 value={formData.fullName}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
- focus:outline-none focus:ring-2 focus:ring-slate-400"
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+ focus:outline-none focus:ring-2 focus:ring-slate-400 text-sm"
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Email
               </label>
@@ -71,16 +70,16 @@ const Register = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
             <div>
               <label
                 htmlFor="phone"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
-                Phone Number
+              Phone Number
               </label>
               <input
                 type="tel"
@@ -89,14 +88,14 @@ const Register = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
             <div>
               <label
                 htmlFor="password"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Password
               </label>
@@ -107,14 +106,14 @@ const Register = () => {
                 value={formData.password}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
             <div>
               <label
                 htmlFor="confirmPassword"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Confirm Password
               </label>
@@ -125,15 +124,14 @@ const Register = () => {
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
- focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              {formData.password !== formData.confirmPassword ? <p className='text-xs font-semibold  text-red-500 '>passwords do not match</p> : (formData.password || formData.confirmPassword === "" ) ? <p></p> : <p className='text-green-700 text-xs font-bold font-poppins'>acceptable password</p> }
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+ focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+              {(formData.password && formData.confirmPassword) !== "" && formData.password !== formData.confirmPassword ? <p className='text-xs mt-2 font-semibold  text-red-500 '>Passwords do not match..</p> :  ( (formData.password && formData.confirmPassword) === "" ) ? <p>  </p> : <p className='text-green-700 text-xs mt-2 font-bold font-poppins'>Passwords match</p> }
             </div>
             <div>
               <label
                 htmlFor="birthDate"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Birth Date
               </label>
@@ -144,14 +142,14 @@ const Register = () => {
                 value={formData.birthDate}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
             <div>
               <label
                 htmlFor="gender"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Select gender:
               </label>
@@ -161,7 +159,7 @@ const Register = () => {
                 value={formData.gender}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Gender</option>
@@ -172,7 +170,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="marriage"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 marital status
               </label>
@@ -182,7 +180,7 @@ const Register = () => {
                 value={formData.marriage}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>marital status</option>
@@ -194,7 +192,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="region"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Select Region:
               </label>
@@ -204,7 +202,7 @@ const Register = () => {
                 value={formData.region}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs text-sm border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Religion</option>
@@ -216,7 +214,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="region"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Select region:
               </label>
@@ -226,7 +224,7 @@ const Register = () => {
                 value={formData.region}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Region</option>
@@ -237,7 +235,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="education"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Select Your higher Education Level:
               </label>
@@ -247,7 +245,7 @@ const Register = () => {
                 value={formData.higher}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 text-sm mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Higher Education Level</option>
@@ -261,7 +259,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="resume"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Upload Resume
               </label>
@@ -271,14 +269,14 @@ const Register = () => {
                 name="resume"
                 accept=".pdf,.doc,.docx"
                 onChange={handleChange}
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-200"
               />
             </div>
             <div>
               <label
                 htmlFor="course"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 add your course here
               </label>
@@ -289,14 +287,14 @@ const Register = () => {
                 value={formData.course}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
             <div>
               <label
                 htmlFor="info"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 Where did you get information aout us:
               </label>
@@ -306,7 +304,7 @@ const Register = () => {
                 value={formData.info}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select where you heard us</option>
@@ -318,7 +316,7 @@ const Register = () => {
             <div>
               <label
                 htmlFor="course"
-                className="block sm:text-xs font-medium text-gray-700"
+                className="block sm:text-xs text-sm font-medium text-gray-700"
               >
                 
               </label>
@@ -330,7 +328,7 @@ const Register = () => {
                 value={formData.payment}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
@@ -340,35 +338,35 @@ const Register = () => {
               </div>
               <button
                 type="submit"
-                className="w-full px-4 mb-4 hover:font-semibold py-3 text-white sm:text-xs bg-red-600 rounded-lg hover:bg-red-800
+                className="w-full px-4 mb-4 hover:font-semibold text-sm py-3 text-white sm:text-xs bg-red-600 rounded-lg hover:bg-red-800
  focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-opacity-50"
               >
                 make payment
               </button>
               <button
                 type="submit"
-                className="w-full px-4 hover:font-semibold mb-4 py-3 text-white sm:text-xs bg-slate-800 rounded-lg hover:bg-slate-900
+                className="w-full px-4 hover:font-semibold mb-4 text-sm py-3 text-white sm:text-xs bg-slate-800 rounded-lg hover:bg-slate-900
  focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-opacity-50"
               >
                 Register
               </button>
               <button
                 type="submit"
-                className="w-full px-4 hover:font-semibold py-3 mb-4 text-white sm:text-xs bg-yellow-500 rounded-lg hover:bg-yellow-600
+                className="w-full px-4 hover:font-semibold text-sm py-3 mb-4 text-white sm:text-xs bg-yellow-500 rounded-lg hover:bg-yellow-600
  focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-opacity-50"
               >
                 Read more
               </button>
               <button
                 type="submit"
-                className="w-full px-4 hover:font-semibold py-3 text-white sm:text-xs bg-slate-800 rounded-lg hover:bg-slate-900
+                className="w-full px-4 hover:font-semibold py-3 text-sm text-white sm:text-xs bg-slate-800 rounded-lg hover:bg-slate-900
  focus:outline-none focus:ring-2 focus:ring-slate-400 mb-4 focus:ring-opacity-50"
               >
                 Contact Us
               </button>
             </div>
           </form>
-          <p className="sm:text-sm  text-center text-gray-400 ">
+          <p className="sm:text-sm text-center text-gray-700 ">
             Already have an account?{"  "}
             <Link to="/login" className="text-slate-800 hover:underline">
               Login
