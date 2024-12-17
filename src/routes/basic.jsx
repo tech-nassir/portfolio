@@ -18,7 +18,7 @@ function NavBar () {
      isActive ? "bg-slate-100 text-black rounded-md text-lg font-black" : "" }><p className=" text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
 
 return(
-        <div className="flex flex-col sm:flex-row w-full text-xl bg-slate-900 sm:text-lg text-slate-50 sm:h-16  sm:items-center px-4">
+        <div className="flex flex-col sm:flex-row w-full text-xl bg-slate-900 sm:text-lg text-slate-50 h-12 sm:h-16  sm:items-center px-4">
          <div className="flex flex-row justify-between pt-2 items-center my-auto">
             <div className="flex items-center">
         <div className="flex sm:hidden" onClick={()=>setMenu(!menu)}><div>{menu ? <MdClose/> : <GiHamburgerMenu/> }</div></div>
