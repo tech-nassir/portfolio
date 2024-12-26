@@ -26,7 +26,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 
 const Menuu =() => {
     const drop = links.map(link =><NavLink to={link.path} className={({ isActive }) =>
-        isActive ? "bg-slate-100 outline outline-1  outline-offset-1 outline-slate-50 py-1 text-black rounded-md text-lg font-black" : "py-1" }><p className=" items-center text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
+        isActive ? "bg-slate-100 outline outline-2  outline-offset-2 outline-slate-50 py-1 text-black rounded-md text-lg font-black" : "py-1" }><p className=" items-center text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
   
 
  return (
