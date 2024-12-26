@@ -38,7 +38,7 @@ function New ({ne}) {
         <p className=" sm:text-sm font-poppins font-medium text-sm my-auto">{ne.message}</p>
         <div className="flex pt-2 items-center"><Avatar src={pic2} sx={{height: '13px',width: '13px'}}/>
         <h1 className="text-sm font-poppins font-light text-gray-600 ml-1">{ne.author}</h1>
-        <div className="bg-gray-500 rounded-full size-1 mx-2 "></div>
+        <div className="bg-gray-500 rounded-full size-1 mx-1 "></div>
         <p className="font-poppins text-sm text-gray-600 font-light">12th Dec 2024</p>
         </div>
   </div>
@@ -49,9 +49,9 @@ function New ({ne}) {
 const Videos = ({vid}) => {
     return (
         <div className="flex flex-col px-4">
-        <div className="bg-slate-800 h-48 w-full rounded-lg sm:h-48 sm:w-60"><img src={vid.src} className="w-full h-full rounded-lg"/></div>
+        <div className="bg-slate-800 mb-2 h-48 w-full rounded-lg sm:h-48 sm:w-60"><img src={vid.src} className="w-full h-full rounded-lg"/></div>
         <div className="text-wrap sm:w-60">
-        <p className=" sm:text-sm font-poppins mt-3">{vid.lik}</p>
+        <p className=" sm:text-sm font-poppins mb-4">{vid.lik}</p>
         </div>
         </div>
     );

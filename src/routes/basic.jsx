@@ -65,8 +65,8 @@ return(
         <div className="flex py-2 flex-col sm:flex-row w-full text-xl bg-slate-900 sm:text-lg text-slate-50 sm:h-16  sm:items-center px-4">
          <div className="flex flex-row justify-between py-3 items-center my-auto">
          <div className="flex items-center">
-            <Menuu/>
-            <h1 className="font-poppins sm:hidden text-slate-50 ml-3 font-bold text-sm  ">JOBS JUNCTION.</h1>
+            <div className="sm:hidden"><Menuu/></div>
+            <h1 className="font-poppins sm:hidden text-slate-50 ml-4 font-bold text-sm  ">JOBS JUNCTION.</h1>
         </div>
         
         <Link to="/login" className="font-poppins text-sm sm:hidden font-semibold">Log in</Link>
