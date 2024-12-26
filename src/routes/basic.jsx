@@ -26,7 +26,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 
 const Menuu =() => {
     const drop = links.map(link =><NavLink to={link.path} className={({ isActive }) =>
-        isActive ? "bg-slate-100 text-black rounded-md text-lg font-black" : "" }><p className=" items-center text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
+        isActive ? "bg-slate-100 outline outline-1  outline-offset-1 outline-slate-50 py-1 text-black rounded-md text-lg font-black" : "py-1" }><p className=" items-center text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
   
 
  return (
@@ -62,7 +62,7 @@ function NavBar () {
      isActive ? "bg-slate-100 text-black rounded-md text-lg font-black" : "" }><p className=" items-center text-sm font-poppins px-2 py-1 font-normal">{link.name}</p></NavLink>);
 
 return(
-        <div className="flex flex-col sm:flex-row w-full text-xl bg-slate-900 sm:text-lg text-slate-50 sm:h-16  sm:items-center px-4">
+        <div className="flex py-2 flex-col sm:flex-row w-full text-xl bg-slate-900 sm:text-lg text-slate-50 sm:h-16  sm:items-center px-4">
          <div className="flex flex-row justify-between py-3 items-center my-auto">
          <div className="flex items-center">
             <Menuu/>
