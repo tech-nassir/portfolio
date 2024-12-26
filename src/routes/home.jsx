@@ -104,19 +104,19 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col px-8 text-lg sm:text-lg sm:flex-row sm:space-x-4  justify-center  py-10  ">
-                <div className=" sm:border-r my-3 border-rose-800 h-48 px-2 space-y-4 w-full sm:w-96 flex flex-col justify-center place-items-center">
+            <div className="flex flex-col px-8 text-lg sm:text-lg sm:flex-row sm:space-x-4  justify-center">
+                <div className=" sm:border-r my-12 border-rose-800 h-48 px-2 space-y-4 w-full sm:w-96 flex flex-col justify-center place-items-center">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppin font-semibold sm:text-xl">JOB ASSISTANCE PORTAL</h>
                     <p className="text-justify sm:text-sm font-poppins">We help Organisatins demands and employees needs so that organisations to get qualified employee(s) in accordance</p>
 
                 </div>
-                <div className=" sm:border-r my-3 mb-5 border-blue-800 flex space-y-4 flex-col justify-center place-items-center h-48 w-full px-2 sm:w-96">
+                <div className=" sm:border-r my-12 mb-5 border-blue-800 flex space-y-4 flex-col justify-center place-items-center h-48 w-full px-2 sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold sm:text-xl">WE HELP EMPLOYMENT SEEKERS</h>
                     <p className="text-justify font-poppins sm:text-sm"> We help employees to find a job Vacancies of his/her desire on time in preferred location under open agreement between.</p>
                 </div>
-                <div className=" flex flex-col w-full my-3 justify-center px-2 space-y-4 place-items-center h-48 sm:w-96">
+                <div className=" flex flex-col w-full my-12 justify-center px-2 space-y-4 place-items-center h-48 sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"><img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold sm:text-xl">WE HELP ORGANISATIONS</h>
                     <p className="text-justify font-poppins sm:text-sm">In Second site we help Organisatins to get employee(s) of their rank/type/choices who can help organisations to

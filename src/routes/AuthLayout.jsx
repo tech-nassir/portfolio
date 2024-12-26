@@ -7,9 +7,9 @@ import { Box, Flex } from "@chakra-ui/react"
 
 const Navigation = () => {
   return (
-    <Flex bg="blue.900" w="100%"  h="3rem" >
-      <h1 className="font-semibold text-lg">JobsJunction</h1>
-    </Flex>
+    <div className="flexw-full py-3 bg-slate-800 items-center">
+      <h1 className="font-semibold text-lg text-white">JobsJunction</h1>
+    </div>
   )
 }
 

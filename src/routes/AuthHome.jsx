@@ -6,14 +6,8 @@ import { Button } from '@/components/ui/button'
 
 export default function AuthHome () {
     return (
-      <Box h="90vh"  w="100%" bg="gray.100">
-        <VStack spacing="1rem"> <Text>hello home</Text>
-        <Input type="text"  border="2px" variant="filled" borderRadius="xl" h="2.7rem"w="20rem" /> 
-        <Input type="password" h="3rem" w="20rem" borderRadius="lg"/>
-        <Button bg="blue.600"> Login</Button>
-        
-        </VStack>
-       
-      </Box>
+      <div className="h-96 w-full">
+        <h1 className="font-bold text-xl text-center">homepage</h1>
+      </div>
     );
 }
