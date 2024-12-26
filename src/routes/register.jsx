@@ -33,7 +33,7 @@ const Register = () => {
   return (
     <div className="flex w-full bg-slate-100">
       <div className='sm:w-2/3 w-full flex h-auto mx-6 justify-center  bg-blue-50'>
-        <div className="w-full sm:w-2/3 my-4 px-4 py-10 space-y-8 bg-white rounded-xl font-poppins shadow-xl">
+        <div className="w-full sm:w-2/3 my-4 px-4 py-20 space-y-8 bg-white rounded-xl font-poppins shadow-xl">
           <h2 className="text-xl font-poppins text-center text-slate-800">
             Please Register
           </h2>
@@ -52,7 +52,7 @@ const Register = () => {
                 value={formData.fullName}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400 text-sm"
               />
             </div>
@@ -70,7 +70,7 @@ const Register = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
@@ -88,7 +88,7 @@ const Register = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
@@ -106,7 +106,7 @@ const Register = () => {
                 value={formData.password}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
@@ -124,7 +124,7 @@ const Register = () => {
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"/>
               {(formData.password && formData.confirmPassword) !== "" && formData.password !== formData.confirmPassword ? <p className='text-xs mt-2 font-semibold  text-red-500 '>Passwords do not match..</p> :  ( (formData.password && formData.confirmPassword) === "" ) ? <p>  </p> : <p className='text-green-700 text-xs mt-2 font-bold font-poppins'>Passwords match</p> }
             </div>
@@ -142,7 +142,7 @@ const Register = () => {
                 value={formData.birthDate}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
@@ -159,7 +159,7 @@ const Register = () => {
                 value={formData.gender}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Gender</option>
@@ -180,7 +180,7 @@ const Register = () => {
                 value={formData.marriage}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border text-sm border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>marital status</option>
@@ -202,7 +202,7 @@ const Register = () => {
                 value={formData.region}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs text-sm border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs text-sm border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Religion</option>
@@ -224,7 +224,7 @@ const Register = () => {
                 value={formData.region}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Region</option>
@@ -245,7 +245,7 @@ const Register = () => {
                 value={formData.higher}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 text-sm mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 text-sm mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select Higher Education Level</option>
@@ -269,7 +269,7 @@ const Register = () => {
                 name="resume"
                 accept=".pdf,.doc,.docx"
                 onChange={handleChange}
-                className="w-full px-4 py-1 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 text-sm sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-200"
               />
             </div>
@@ -287,7 +287,7 @@ const Register = () => {
                 value={formData.course}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
@@ -304,7 +304,7 @@ const Register = () => {
                 value={formData.info}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>Select where you heard us</option>
@@ -328,7 +328,7 @@ const Register = () => {
                 value={formData.payment}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-1 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
+                className="w-full px-4 py-2 sm:py-3 mt-1 sm:text-xs border border-gray-300 rounded-md
  focus:outline-none focus:ring-2 focus:ring-slate-400"
               />
             </div>
