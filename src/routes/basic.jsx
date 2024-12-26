@@ -8,6 +8,7 @@ import { Button,Box, Typography, Container, IconButton } from '@mui/material';
 import { BsSunFill } from "react-icons/bs";
 import { MoodOutlined } from "@mui/icons-material";
 import { IoSunnyOutline } from "react-icons/io5";
+import { CloseButton } from "../components/ui/close-button";
 
 const links = [{ path:"",name:"Home"},{path: "News",name:"News"},{path: "FAQs",name:"FAQs"},{path: "About Us",name:"About us"}];
 

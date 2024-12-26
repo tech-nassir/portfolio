@@ -2,6 +2,9 @@ import React from "react"
 import pic2 from './assets/IMG-20241118-WA0013.jpg'
 import logo from './assets/IMG-20241118-WA0012.jpg'
 import { Facebook, X, YouTube } from "@mui/icons-material";
+import { CloseButton } from "../components/ui/close-button";
+
+
 export default function About () {
     return (
         <div className="w-full  py-12 bg-slate-50  ">
@@ -16,7 +19,6 @@ export default function About () {
             </div>
             <img src={logo} className="sm:size-96 rounded-lg"/>
           </div>
-
           <div className=" rounded-lg flex mt-12  sm:flex-row w-96 pb-16 sm:w-full justify-self-center flex-col justify-center space-y-10  mx-12 sm:mx-0">
             <div className="flex flex-col sm:space-y-2 sm:px-16 border-r border-slate-950  place-items-center mt-10">
                 <p className="font-poppins font-light sm:text-lg">Jobs connected</p>

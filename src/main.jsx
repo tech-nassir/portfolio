@@ -22,8 +22,7 @@ import About from './routes/about.jsx';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import AuthLayout from './routes/AuthLayout.jsx';
 import AuthHome from './routes/AuthHome.jsx';
-
-
+import { Provider } from "@/components/ui/provider"
 
 const router = createBrowserRouter([
   {
@@ -71,23 +70,11 @@ const router = createBrowserRouter([
     Component: Register
   }
 ]);
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2',
-    },
-    secondary: {
-      main: '#dc004e',
-    },
-  },
-});
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-    <CssBaseline />
+    <Provider>
     <RouterProvider router={router} />
-    </ThemeProvider>
+    </Provider>
   </StrictMode>
 )
