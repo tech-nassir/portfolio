@@ -30,7 +30,7 @@ const Down = () => {
 
 const Navigation = () => {
   return (
-    <div className="flex w-full px-2 py-2 bg-gray-50 justify-between items-center">
+    <div className="flex w-full px-4 py-2 bg-gray-50 justify-between items-center">
       <h1 className="font-semibold text-lg ml-2 text-gray-800">JobsJunction</h1>
       <div className="flex items-center">
         <FiMail className="text-gray-600 font-bold mx-4"/>
