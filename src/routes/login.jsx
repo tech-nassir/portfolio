@@ -51,7 +51,7 @@ const Login = () => {
               />
             </div>
             <button
-              onClick={()=> navigate("/auth")}
+              onClick={()=> navigate("/auth/home")}
               type="submit"
               className="w-full px-8 py-2 text-white bg-slate-700 text-sm sm:text-sm h-10 sm:h-10 rounded-md hover:bg-slate-800
    focus:outline-none focus:ring-2 focus:ring-slate-200 hover:font-bold focus:ring-opacity-50 font-semibold"

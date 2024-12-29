@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button'
 
 export default function AuthHome () {
     return (
-      <div className="h-96 w-full">
-        <h1 className="font-bold text-xl text-center">homepage</h1>
+      <div className="min-h-screen w-full">
+        <h1 className="text-xl text-center">homepage</h1>
       </div>
     );
 }

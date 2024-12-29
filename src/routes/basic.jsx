@@ -66,12 +66,21 @@ return(
          <div className="flex flex-row justify-between py-3 items-center my-auto">
          <div className="flex items-center">
             <div className="sm:hidden"><Menuu/></div>
-            <h1 className="font-poppins sm:hidden text-slate-50 ml-4 font-bold text-sm  ">JOBS JUNCTION.</h1>
+            <h1 className="font-poppins sm:hidden text-slate-50 ml-4 font-bold text-sm  ">JOBS JUNCTION</h1>
         </div>
         
         <Link to="/login" className="font-poppins text-sm sm:hidden font-semibold">Log in</Link>
         </div>
-          <div className="hidden space-x-4 items-center justify-between sm:w-full sm:flex sm:flex-row px-2 "><div className="flex items-center"><img src={logo} className="size-8 rounded-lg"/><h1 className="font-poppins font-bold text-xs sm:text-lg ">JOBS JUNCTION.</h1></div><div className=" flex items-center"><div className="flex space-x-4">{drop}</div><Button bg="blue.200" color="black" className="ml-4" onClick={()=>navigate("login")}>Login</Button></div></div>
+          <div className="hidden space-x-4 items-center justify-between sm:w-full sm:flex sm:flex-row px-2 ">
+            <div className="flex items-center">
+            <img src={logo} className="size-8 rounded-lg"/>
+              <h1 className="font-poppins font-bold text-xs sm:text-lg ">JOBS JUNCTION</h1>
+            </div>
+           <div className=" flex items-center">
+             <div className="flex space-x-4">{drop}</div>
+             <Button bg="blue.200" color="black" className="ml-4" onClick={()=>navigate("login")}>Login</Button>
+           </div>
+        </div>
         </div>
     );
 }

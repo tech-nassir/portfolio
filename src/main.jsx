@@ -23,7 +23,9 @@ import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import AuthLayout from './routes/AuthLayout.jsx';
 import AuthHome from './routes/AuthHome.jsx';
 import { Provider } from "@/components/ui/provider"
-
+import AuthForum from './routes/AuthForum.jsx';
+import AuthResumes from './routes/AuthResumes.jsx';
+import AuthInvoices from './routes/AuthInvoices.jsx';
 const router = createBrowserRouter([
   {
     Component: Basic,
@@ -52,23 +54,37 @@ const router = createBrowserRouter([
     ],
   },
   {
-     path: "/auth",
-     Component: AuthLayout,
-     children: [
-      {
-      index: true,
-      Component: AuthHome
-      },
-     ],
-  },
-  {
     path: "login",
     Component: Login
   },
   {
     path: "register",
     Component: Register
-  }
+  },
+{
+  path: "/auth",
+  Component: AuthLayout,
+  children: [
+    {
+      path: "home",
+      Component: AuthHome
+    },
+    {
+      path: "/auth/invoices",
+      Component: AuthInvoices
+    },
+    {
+      path: "/auth/forum",
+      Component: AuthForum
+    },
+    {
+      path: "resumes",
+      Component: AuthResumes
+    },
+  ], 
+},
+
+
 ]);
 
 createRoot(document.getElementById('root')).render(
