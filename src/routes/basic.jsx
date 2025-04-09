@@ -89,7 +89,7 @@ return(
 const Basic = () => {
           let navigate = useNavigate();
     return (
-        <div className="w-full h-auto overflow-y-auto relative bg-slate-50">
+        <div className="w-full h-auto overflow-y-auto relative bg-slate-50 dark:bg-slate-800">
             <NavBar/>
               <Outlet/>
             <div className="bg-slate-900 w-full h-24 bottom-0 pt-2">

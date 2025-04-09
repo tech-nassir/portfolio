@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from './assets/IMG-20241118-WA0012.jpg'
-import pic2 from './assets/IMG-20241118-WA0013.jpg'
+import pic2 from './assets/IMG-20250405-WA0028.jpg'
 import pic3 from './assets/IMG-20241118-WA0014.jpg'
 import pic4 from './assets/IMG-20241118-WA0015.jpg'
 import pic5 from './assets/IMG-20241118-WA0016.jpg'
@@ -58,11 +58,12 @@ const Home = () => {
             </div>
 
             <div className="flex mx-auto flex-col sm:flex-row w-100 px-1 justify-center sm:space-x-0 items-center">
-                <div className='bg-red-400 m-auto w-full sm:w-1/3 rounded-lg'><img src={pic2} className='w-full h-72' /></div>
+                <div className='bg-red-400 m-auto w-full sm:w-1/3 rounded-lg'>
+                <img src={pic2} className='w-full h-72' /></div>
                 <div className=' w-full sm:w-1/2 p-8'>
                     <p>EMPLOYEES NETWORKING CENTER</p>
                     <h2 className='font-bold font-poppins text-3xl'>JOBS’ JUNCTION</h2>
-                    <p className='text-lg font-poppins text-justify'>Jobs’ Junction is a software platform provided by jobs junction organisation with the main objective to eliminate unemployment for Teachers and Schools.
+                    <p className=' font-poppins'>Jobs’ Junction is a software platform provided by jobs junction organisation with the main objective to eliminate unemployment for Teachers and Schools.
                         On one side we pave ways for professionals to dig up jobs of their need. On the second side is to help organisations or employers to have employees with their rank who can help them to
                         achieve their mission and visions with the competitive knowledge and strategies.
 
@@ -108,18 +109,18 @@ const Home = () => {
                 <div className=" sm:border-r my-12 border-rose-800 h-48 px-2 space-y-4 w-full sm:w-96 flex flex-col justify-center place-items-center">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppin font-semibold sm:text-xl">JOB ASSISTANCE PORTAL</h>
-                    <p className="text-justify sm:text-sm font-poppins">We help Organisatins demands and employees needs so that organisations to get qualified employee(s) in accordance</p>
+                    <p className="sm:text-sm text-center font-poppins">We help Organisatins demands and employees needs so that organisations to get qualified employee(s) in accordance</p>
 
                 </div>
                 <div className=" sm:border-r my-12 mb-5 border-blue-800 flex space-y-4 flex-col justify-center place-items-center h-48 w-full px-2 sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold sm:text-xl">WE HELP EMPLOYMENT SEEKERS</h>
-                    <p className="text-justify font-poppins sm:text-sm"> We help employees to find a job Vacancies of his/her desire on time in preferred location under open agreement between.</p>
+                    <p className="font-poppins text-center sm:text-sm"> We help employees to find a job Vacancies of his/her desire on time in preferred location under open agreement between.</p>
                 </div>
                 <div className=" flex flex-col w-full my-12 justify-center px-2 space-y-4 place-items-center h-48 sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"><img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold sm:text-xl">WE HELP ORGANISATIONS</h>
-                    <p className="text-justify font-poppins sm:text-sm">In Second site we help Organisatins to get employee(s) of their rank/type/choices who can help organisations to
+                    <p className="font-poppins sm:text-sm text-center">In Second site we help Organisatins to get employee(s) of their rank/type/choices who can help organisations to
                         meet their vision and mission in competitive ways and strategies</p>
                 </div>
             </div>
@@ -157,18 +158,18 @@ const Home = () => {
                 <div className=" sm:border-r px-2 border-rose-800 h-48 space-y-4 w-full sm:w-96 flex flex-col justify-center place-items-center">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold text-2xl">JOB ASSISTANCE PORTAL</h>
-                    <p className='text-justify sm:text-lg font-poppins text-lg px-4'>We help OrganisatiOns demands and Employees IN need so that Organisations to get qualified employee(s) in accordance</p>
+                    <p className=' font-poppins text-center px-4'>We help OrganisatiOns demands and Employees IN need so that Organisations to get qualified employee(s) in accordance</p>
 
                 </div>
                 <div className="sm:border-r px-2 border-blue-800 flex space-y-4 flex-col justify-center place-items-center h-48 w-full sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold text-2xl">WE HELP EMPLOYEES</h>
-                    <p className='text-justify font-poppins text-lg sm:text-lg'> We help Employees to find a JOBS of his/her desire on time in preferred location under open agreement between.</p>
+                    <p className='font-poppins text-center'> We help Employees to find a JOBS of his/her desire on time in preferred location under open agreement between.</p>
                 </div>
                 <div className=" flex flex-col px-2 justify-center space-y-4 place-items-center h-48 w-full sm:w-96">
                     <div className="h-12 w-12 rounded-lg bg-red-700"> <img src={logo} className='w-fit h-full rounded-lg' /></div>
                     <h className="font-poppins font-semibold text-xl"> PRIVATE ORGANISATIONS</h>
-                    <p className='text-lg sm:text-lg font-poppins text-justify'>In Second site we help organisations to employee(s) of their rank/type/choices who can help school to
+                    <p className=' font-poppins text-center'>In Second site we help organisations to employee(s) of their rank/type/choices who can help school to
                         meet their vision and mission in competitive ways and strategie</p>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import pic2 from './assets/IMG-20241118-WA0011.jpg'
-import pic3 from './assets/IMG-20241118-WA0012.jpg'
-import pic4 from './assets/IMG-20241118-WA0013.jpg'
-import pic5 from './assets/IMG-20241118-WA0014.jpg'
-import pic6 from './assets/IMG-20241118-WA0015.jpg'
-import pic7 from './assets/IMG-20241118-WA0016.jpg'
-import pic8 from './assets/IMG-20241118-WA0006.jpg'
-import pic9 from './assets/IMG-20241118-WA0007.jpg'
+import pic2 from './assets/IMG-20250319-WA0001.jpg'
+import pic3 from './assets/IMG-20250319-WA0002.jpg'
+import pic4 from './assets/IMG-20250319-WA0000.jpg'
+import pic5 from './assets/IMG-20250405-WA0023.jpg'
+import pic6 from './assets/IMG-20250405-WA0024.jpg'
+import pic7 from './assets/IMG-20250405-WA0028.jpg'
+import pic8 from './assets/IMG-20250405-WA0029.jpg'
+import pic9 from './assets/IMG-20240905-WA0020.jpg'
 
 
 
@@ -53,10 +53,9 @@ function Carousel() {
  {slides.map((slide, index) => (
  <div
  key={slide.id}
- className={`${slide.bgColor} absolute inset-0 transition-opacity duration-700 ease-in-out
-${index === currentSlide ? 'opacity-100 block' : 'opacity-0 hidden'}`}
-
- > <img src={slide.bgColor} className='w-full absolute h-full'/>
+ className={`${slide.bgColor} absolute flex justify-center bg-transparent inset-0 transition-opacity duration-700 ease-in-out
+${index === currentSlide ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
+ <img src={slide.bgColor} className='w-3/5 absolute h-full'/>
  <div className="flex items-center justify-center pl-72 absolute h-full text-white text-2xl font-bold">
  {slide.text}
  </div>

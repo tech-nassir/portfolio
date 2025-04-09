@@ -1,10 +1,10 @@
 import React from "react"
 import { Button,Box, Typography, Container, Card, Avatar } from '@mui/material';
-import pic2 from './assets/IMG-20241118-WA0013.jpg'
-import pic3 from './assets/IMG-20241118-WA0014.jpg'
+import pic2 from './assets/IMG-20240905-WA0020.jpg'
+import pic3 from './assets/IMG-20250405-WA0024.jpg'
 import pic4 from './assets/IMG-20241118-WA0015.jpg'
-import pic5 from './assets/IMG-20241118-WA0016.jpg'
-import pic1 from './assets/IMG-20241118-WA0012.jpg'
+import pic5 from './assets/IMG-20250405-WA0035.jpg'
+import pic1 from './assets/IMG-20241111-WA0002.jpg'
 
 const vids = [
     {
@@ -33,13 +33,13 @@ const vids = [
 function New ({ne}) {
     return (
         <div className="flex sm:ml-4 items-center">
-        <div className="sm:h-16 h-16 w-24 sm:w-24 bg-slate-800 rounded-md"></div>
+        <div className="sm:h-16 h-16 w-24 sm:w-24 bg-slate-800 dark:bg-slate-400 rounded-md"></div>
         <div className="text-wrap w-2/3 ml-2 flex flex-col ">
         <p className=" sm:text-sm font-poppins font-medium text-sm my-auto">{ne.message}</p>
         <div className="flex pt-2 items-center"><Avatar src={pic2} sx={{height: '13px',width: '13px'}}/>
-        <h1 className="text-sm font-poppins font-light text-gray-600 ml-1">{ne.author}</h1>
+        <h1 className="text-xs font-poppins font-light dark:text-gray-200 text-gray-600 ml-1">{ne.author}</h1>
         <div className="bg-gray-500 rounded-full size-1 mx-1 "></div>
-        <p className="font-poppins text-sm text-gray-600 font-light">12th Dec 2024</p>
+        <p className="font-poppins text-xs dark:text-gray-200 text-gray-600 font-light">12th Dec 2024</p>
         </div>
   </div>
         </div>
@@ -62,7 +62,7 @@ export default function News () {
         <>
         <div className="flex sm:items-center sm:flex-row flex-col mt-8">
         <div className="sm:w-3/5 w-fit pr-2">
-        <img src={pic2} className="w-full h-84 bg-black" />
+        <img src={pic2} className="w-full rounded-lg h-96 bg-black" />
         </div>
         <div className="sm:w-2/5 w-full flex flex-col mx-2 py-4 space-y-4 sm:space-y-6">
         <h2 className="font-poppins font-bold">Our top articles. </h2>
