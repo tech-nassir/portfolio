@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins','sans-serif'],
+        headings: ['Caveat Brush', 'cursive']
       },
     },
   },

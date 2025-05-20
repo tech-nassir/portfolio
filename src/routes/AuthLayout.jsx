@@ -82,6 +82,8 @@ const Navigation = () => {
     </div>
   )
 }
+
+
 const links = [{ path:"home",name:"Home"},{path: "invoices",name:"Invoices"},{path: "forum",name:"Forum"},{path: "resumes",name:"Resumes"},];
 const AuthLayout = () => {
     return (
