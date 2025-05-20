@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # new-jobs-junction
 # folio
 # folio
+# portfolio
