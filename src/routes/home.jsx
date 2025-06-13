@@ -21,7 +21,7 @@ const Home = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <div className="relative text-gray-900 h-dvh overflow-y-auto justify-evenly w-full">
+        <div className="relative text-gray-900 dark:text-gray-900 h-dvh overflow-y-auto justify-evenly w-full">
         <img src={back} className="h-full overflow-y-auto w-full"/>
     <div className="flex justify-center h-full absolute top-0 left-0 overflow-y-auto w-full">
         <div className=" p-4 w-full">
