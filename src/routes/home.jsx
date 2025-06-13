@@ -37,7 +37,7 @@ const Home = () => {
                 
                 <h1 className="font-headings text-4xl sm:text-6xl text-center  sm:text-end">Hi, I'm Nassir</h1>
                 <p className="sm:text-lg sm:font-poppins text-center sm:text-end font-light sm:font-normal text-xl my-4 text-gray-900">
-                    I am a self-taught Mobile and Web Apps Developer,<br/> Highly passionate about technologies and A Civil Engineer by profession.<br/>
+                    I am a self-taught Mobile and Web Apps Developer,<br/> Highly passionate about technologies,A Civil Engineer by profession.<br/>
                      For Web and Mobile Apps Design,
                       Consultation and Creation feel free to reach me. </p>
             </motion.div>  
