@@ -14,7 +14,6 @@ import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
 import Home from './routes/home.jsx';
-import { Provider } from "@/components/ui/provider"
 import { useEffect } from 'react';
 const router = createBrowserRouter([
       {
@@ -25,9 +24,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider>
     <RouterProvider router={router} />
-    </Provider>
   </StrictMode>
 )
 
