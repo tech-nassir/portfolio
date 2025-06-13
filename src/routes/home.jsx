@@ -48,12 +48,16 @@ const Menuu = () => {
   </DrawerRoot>
   );
   }
-import { useRef } from 'react'
+import { useRef } from "react"
+
+
+
+
 const Home = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <div className="relative h-dvh overflow-y-auto w-full">
+        <div className="relative text-gray-900 h-dvh overflow-y-auto justify-evenly w-full">
         <img src={back} className="h-full overflow-y-auto w-full"/>
     <div className="flex justify-center h-full absolute top-0 left-0 overflow-y-auto w-full">
         <div className=" p-4  w-full">
@@ -62,7 +66,7 @@ const Home = () => {
             <a href="#projects" className="font-semibold sm:font-normal font-headings text-lg">Projects</a>
             <a href="#contacts" className="font-semibold sm:font-normal font-headings text-lg">Contacts</a>
         </div>
-            <motion.div  id="intro" className="flex flex-col place-items-center sm:items-end mx-6 sm:mx-12 mb-48 mt-12">
+            <motion.div  id="intro" className="flex flex-col place-items-center sm:items-end mx-6 sm:mx-12 my-36">
                 <img src={pro} className="sm:size-36 size-28 mt-6 mb-12 rounded-full outline outline-green-900 sm:mb-16 outline-offset-2"/>
                 <h1 className="font-headings text-4xl sm:text-6xl text-center  sm:text-end">Hi, I'm Nassir</h1>
                 <p className="sm:text-lg  text-center sm:text-end font-light sm:font-semibold text-xl my-4 text-gray-900">
@@ -73,22 +77,21 @@ const Home = () => {
             <motion.div ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8 }} id="projects" className="mt-12 mb-44 place-items-end flex flex-col mx-6 sm:m-12">
-                <h1 className="font-bold my-6 text-2xl font-headings text-start text-gray-900">Projects</h1>
+      transition={{ duration: 0.8 }} id="projects" className="mt-12 mb-44  flex flex-col place-items-center sm:place-items-end mx-6 sm:m-12">
+                <h1 className="font-bold my-6 text-2xl font-headings text-center sm:text-end text-gray-900">Projects</h1>
                 <p className=" text-gray-900 text-center sm:text-start text-xl font-light sm:font-medium">
                     I am a creative web and mobile app developer, a Co-founder of GrandyPOS system and BraveTech Innovations.
                 </p>
-               
-               <a className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex justify-end">
-                  <img src={logo} />
+               <a className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
+                  <img src={logo}  className=""/>
                </a>
 
             </motion.div>    
             <motion.div ref={ref}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 100 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8 }} id="contacts" className="flex flex-col sm:justify-end pb-24 sm:m-12 ">
-                <p className=" text-end m-12 text-xl font-semibold font-headings">
+                <p className="text-center sm:text-end m-12 text-2xl font-semibold font-headings">
                     Contact me.</p>
                 <div className="flex flex-col place-items-end mx-12 space-y-4">
                 <p className="sm:font-headings font-light text-lg underline">nassiramir2014@gmail.com</p>
