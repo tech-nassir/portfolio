@@ -32,11 +32,11 @@ const Home = () => {
         </div>
             <motion.div  id="intro" className="flex flex-col place-items-center sm:items-end mx-6 sm:mx-12 my-36">
                 <div className="sm:size-36 size-28 flex justify-center place-items-center bg-gray-400 mb-12 rounded-full outline outline-green-900 sm:mb-16 outline-offset-0">
-                 <img src={pro} className="size-32 rounded-full"/>
+                 <img src={pro} className="sm:size-32 size-24 rounded-full"/>
                 </div>
                 
                 <h1 className="font-headings text-4xl sm:text-6xl text-center  sm:text-end">Hi, I'm Nassir</h1>
-                <p className="sm:text-lg font-poppins text-center sm:text-end font-light sm:font-normal text-xl my-4 text-gray-900">
+                <p className="sm:text-lg sm:font-poppins text-center sm:text-end font-light sm:font-normal text-xl my-4 text-gray-900">
                     I am a self-taught Mobile and Web Apps Developer,<br/> Highly passionate about technologies and A Civil Engineer by profession.<br/>
                      For Web and Mobile Apps Design,
                       Consultation and Creation feel free to reach me. </p>
@@ -46,8 +46,13 @@ const Home = () => {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8 }} id="projects" className="mt-12 mb-44  flex flex-col place-items-center sm:place-items-end mx-6 sm:m-12">
                 <h1 className="font-bold my-6 text-2xl font-headings text-center sm:text-end text-gray-900">Projects</h1>
-                <p className=" text-gray-900 text-center font-poppins  sm:text-start text-xl sm:text-md font-light sm:font-normal">
-                    Proudly creator and a Co-founder of GrandyPOS system and BraveTech Innovations.
+                <p className=" text-gray-900 text-center sm:font-poppins  sm:text-end text-xl sm:text-md font-light sm:font-normal">
+                    Proudly creator and a Co-founder of 
+                    <ul className='justify-end'>
+                        <li className='text-sm'>GrandyPOS</li>
+                        <li className='flex text-end items-center text-sm'>Job-linkersTz <p className="mx-2 text-sm text-gray-600">(coming soon..!!)</p></li>
+                        <li className='text-sm'>BraveTech Innovations Group</li>
+                    </ul> 
                 </p>
                <a className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
                   <img src={logo}  className=""/>
