@@ -49,7 +49,7 @@ const Home = () => {
                 <p className=" text-gray-900 text-center sm:font-poppins flex items-center sm:text-end text-xl sm:text-md font-light sm:font-normal">
                     Proudly creator and a Co-founder of GrandyPOS, Job-linkersTz and BraveTech Innovations Group.
                 </p>
-               <a href="https://grandypos.netlify.app" className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
+               <a className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
                   <img src={logo}  className=""/>
                </a>
 
