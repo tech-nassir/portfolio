@@ -49,7 +49,7 @@ const Home = () => {
                 <p className=" text-gray-900 text-center sm:font-poppins flex items-center sm:text-end text-xl sm:text-md font-light sm:font-normal">
                     Proudly creator and a Co-founder of GrandyPOS, Job-linkersTz and BraveTech Innovations Group.
                 </p>
-               <a className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
+               <a href="https://grandypos.netlify.app" className="sm:h-28 sm:w-56 h-24 w-48 m-8 sm:my-2 flex place-items-center">
                   <img src={logo}  className=""/>
                </a>
 
@@ -63,8 +63,9 @@ const Home = () => {
                 <div className="flex flex-row gap-6 justify-center mx-12">
                 <SiGmail className="text-2xl"/>
                 <HiPhone className="text-2xl"/>
-                <FaWhatsapp className="text-2xl"/>
-                <CgInstagram className="text-2xl"/>
+                <a href="https://wa.me/255627861124/">
+                  <FaWhatsapp className="text-2xl"/>
+                </a>
                 <BsTwitterX className="text-2xl"/>
                 </div>
                
