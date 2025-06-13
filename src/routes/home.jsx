@@ -39,7 +39,7 @@ const Home = () => {
                 <p className="sm:text-lg sm:font-poppins text-center sm:text-end font-light sm:font-normal text-xl my-4 text-gray-900">
                     I am a self-taught Mobile and Web Apps Developer,<br/> Highly passionate about technologies,A Civil Engineer by profession.<br/>
                      For Web and Mobile Apps Design,
-                      Consultation and Creation feel free to reach me. </p>
+                      Consultancy and Creation feel free to reach me. </p>
             </motion.div>  
             <motion.div ref={ref}
       initial={{ opacity: 0, y: 50 }}
